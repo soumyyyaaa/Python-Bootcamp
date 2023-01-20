@@ -15,7 +15,7 @@ else:
     lives = 5
     print("You have 5 attempts remaining to guess the number.")
 
-while lives > 1:
+while lives > 0:
     guess = int(input("Make a guess: "))
     if guess == chosen_number:
         print(f"You got it! The answer was {chosen_number}")
