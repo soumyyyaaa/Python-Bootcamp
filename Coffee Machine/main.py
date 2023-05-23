@@ -48,6 +48,7 @@ while drinkDispensed:
     else:
         for key in MENU[userChoice]["ingredients"]:
             if MENU[userChoice]["ingredients"][key] > resources[key]:
+                enoughResource = False
                 print(f"Sorry there is not enough {key}.")
                 break
             else:
